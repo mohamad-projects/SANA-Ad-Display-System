@@ -8,8 +8,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
 class PhotoController extends Controller {
-
-    // لجلب آخر صورتين فقط (للعرض في السينما)
+//
+// لجلب آخر صورتين فقط (للعرض )
     public function index() {
         return response()->json(Photo::latest()->take(10)->get());
     }
