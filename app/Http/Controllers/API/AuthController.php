@@ -10,6 +10,7 @@ use Illuminate\Validation\ValidationException;
 
 class AuthController extends Controller
 {
+    //..
     // دالة تسجيل الدخول
     public function login(Request $request)
     {
